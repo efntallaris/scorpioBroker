@@ -25,7 +25,7 @@ Ensure you have the following installed:
 
 Follow these steps to build and run the broker:
 
-1. **Build the project with Maven:**
+1. **Build the project and the docker images with Maven:**
    ```bash
    sudo mvn clean package -DskipTests -Pdocker
    ```
