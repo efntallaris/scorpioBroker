@@ -1,0 +1,8 @@
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/controller/EntityOperationsQueryController.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/controller/QueryController.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingBase.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingByteArray.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingInMemory.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingString.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/repository/QueryDAO.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/QueryManager/src/main/java/eu/neclab/ngsildbroker/queryhandler/services/QueryService.java

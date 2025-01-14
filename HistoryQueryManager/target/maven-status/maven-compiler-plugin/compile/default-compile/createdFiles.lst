@@ -1,0 +1,7 @@
+eu/neclab/ngsildbroker/historyquerymanager/controller/HistoryController.class
+eu/neclab/ngsildbroker/historyquerymanager/service/HistoryQueryService.class
+eu/neclab/ngsildbroker/historyquerymanager/repository/HistoryDAO.class
+eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingString.class
+eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingInMemory.class
+eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingByteArray.class
+eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingBase.class

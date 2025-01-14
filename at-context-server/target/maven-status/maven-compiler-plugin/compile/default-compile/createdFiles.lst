@@ -1,0 +1,4 @@
+eu/neclab/ngsildbroker/atcontextserver/dao/ContextDao.class
+eu/neclab/ngsildbroker/atcontextserver/service/ContextService.class
+eu/neclab/ngsildbroker/atcontextserver/cache/ContextCache.class
+eu/neclab/ngsildbroker/atcontextserver/controller/ContextController.class

@@ -1,0 +1,8 @@
+eu/neclab/ngsildbroker/entityhandler/messaging/EntityMessagingString.class
+eu/neclab/ngsildbroker/entityhandler/controller/EntityBatchController.class
+eu/neclab/ngsildbroker/entityhandler/services/EntityService.class
+eu/neclab/ngsildbroker/entityhandler/messaging/EntityMessagingBase.class
+eu/neclab/ngsildbroker/entityhandler/controller/EntityController.class
+eu/neclab/ngsildbroker/entityhandler/services/EntityInfoDAO.class
+eu/neclab/ngsildbroker/entityhandler/messaging/EntityMessagingByteArray.class
+eu/neclab/ngsildbroker/entityhandler/messaging/EntityMessagingInMemory.class

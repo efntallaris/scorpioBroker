@@ -1,0 +1,103 @@
+server:
+  port: 2025
+
+
+atcontext:
+  url: http://localhost:9090/ngsi-ld/contextes/
+
+#Entity-Manager topics properties
+entity:
+  topic: ENTITY
+  create:
+    topic: ENTITY_CREATE
+  append:
+    topic: ENTITY_APPEND
+  update:
+    topic: ENTITY_UPDATE
+  delete:
+    topic: ENTITY_DELETE
+    
+csource:
+  registry:
+    topic: CSOURCE_REGISTRATION
+  notification:
+    topic: CONTEXT_SOURCE_NOTIFICATION
+query:
+  topic: QUERY
+  result:
+    topic: QUERY_RESULT
+#kafka broker path
+bootstrap:
+  servers: localhost:9092
+
+key:
+  deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#Entity Append ovewrite options
+append:
+  overwrite: noOverwrite
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    restart:
+      enabled: true
+      
+
+spring:
+  kafka:
+    admin:
+      properties:
+        cleanup:
+          policy: compact
+  main:
+    lazy-initialization: true
+  application:
+    name: subscription-manager
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        SUBSCRIPTIONS_WRITE_CHANNEL:
+          destination: SUBSCRIPTIONS
+          contentType: application/json
+  datasource:
+    hikari:
+      connectionTimeout: 30000
+      idleTimeout: 30000
+      maxLifetime: 2000000
+      maximumPoolSize: 20
+      minimumIdle: 5
+      poolName: SpringBootHikariCP
+    password: ngb
+    url: jdbc:postgresql://localhost:5432/ngb?ApplicationName=ngb_registrymanager
+    username: ngb
+writer:
+  datasource:
+    hikari:
+      connectionTimeout: 30000
+      idleTimeout: 30000
+      maxLifetime: 2000000
+      maximumPoolSize: 20
+      minimumIdle: 5
+      poolName: SpringBootHikariCP_Writer
+    password: ngb
+    url: jdbc:postgresql://localhost:5432/ngb?ApplicationName=ngb_storagemanager_writer
+    username: ngb
+  enabled: true
+reader:
+  enabled: true
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/ngb?ApplicationName=ngb_storagemanager_reader"
+    username: ngb
+    password: ngb
+    hikari:
+      minimumIdle: 5
+      maximumPoolSize: 20
+      idleTimeout: 30000
+      poolName: SpringBootHikariCP_Reader
+      maxLifetime: 2000000
+      connectionTimeout: 30000

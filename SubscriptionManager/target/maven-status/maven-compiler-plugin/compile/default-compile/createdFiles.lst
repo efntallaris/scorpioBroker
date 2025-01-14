@@ -1,0 +1,15 @@
+eu/neclab/ngsildbroker/subscriptionmanager/repository/SubscriptionInfoDAO.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionMessagingString.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionSyncSQS.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionMessagingByteArray.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionSyncServiceBase.class
+eu/neclab/ngsildbroker/subscriptionmanager/service/SubscriptionService.class
+eu/neclab/ngsildbroker/subscriptionmanager/controller/SubscriptionController.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionSyncServiceString.class
+eu/neclab/ngsildbroker/subscriptionmanager/controller/NotificationController.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SyncService.class
+eu/neclab/ngsildbroker/subscriptionmanager/service/LocalContextService.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionMessagingBase.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionMessagingInMemory.class
+eu/neclab/ngsildbroker/subscriptionmanager/messaging/SubscriptionSyncServiceByteArray.class
+eu/neclab/ngsildbroker/subscriptionmanager/service/LocalEntityService.class

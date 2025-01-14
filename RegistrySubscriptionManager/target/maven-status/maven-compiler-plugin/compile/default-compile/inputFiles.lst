@@ -1,0 +1,12 @@
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/controller/RegistrySubscriptionController.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionMessagingBase.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionMessagingByteArray.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionMessagingInMemory.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionMessagingString.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionSyncSQS.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionSyncServiceBase.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionSyncServiceByteArray.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/RegistrySubscriptionSyncServiceString.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/messaging/SyncService.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/repository/RegistrySubscriptionInfoDAO.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/RegistrySubscriptionManager/src/main/java/eu/neclab/ngsildbroker/registry/subscriptionmanager/service/RegistrySubscriptionService.java

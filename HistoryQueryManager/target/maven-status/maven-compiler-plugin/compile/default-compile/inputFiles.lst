@@ -1,0 +1,7 @@
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/controller/HistoryController.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingBase.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingByteArray.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingInMemory.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/messaging/HistoryMessagingString.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/repository/HistoryDAO.java
+/root/scorpio/ScorpioBroker2/ScorpioBroker/HistoryQueryManager/src/main/java/eu/neclab/ngsildbroker/historyquerymanager/service/HistoryQueryService.java

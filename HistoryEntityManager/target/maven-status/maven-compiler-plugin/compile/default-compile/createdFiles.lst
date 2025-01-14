@@ -1,0 +1,10 @@
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistorySync.class
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistoryMessagingString.class
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistoryMessagingInMemory.class
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistorySyncString.class
+eu/neclab/ngsildbroker/historyentitymanager/repository/HistoryDAO.class
+eu/neclab/ngsildbroker/historyentitymanager/controller/HistoryController.class
+eu/neclab/ngsildbroker/historyentitymanager/service/HistoryEntityService.class
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistoryMessagingBase.class
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistorySyncByteArray.class
+eu/neclab/ngsildbroker/historyentitymanager/messaging/HistoryMessagingByteArray.class

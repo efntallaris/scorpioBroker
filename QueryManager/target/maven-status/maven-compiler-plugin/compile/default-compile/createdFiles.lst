@@ -1,0 +1,8 @@
+eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingString.class
+eu/neclab/ngsildbroker/queryhandler/services/QueryService.class
+eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingByteArray.class
+eu/neclab/ngsildbroker/queryhandler/controller/QueryController.class
+eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingInMemory.class
+eu/neclab/ngsildbroker/queryhandler/repository/QueryDAO.class
+eu/neclab/ngsildbroker/queryhandler/messaging/QueryManagerMessagingBase.class
+eu/neclab/ngsildbroker/queryhandler/controller/EntityOperationsQueryController.class
