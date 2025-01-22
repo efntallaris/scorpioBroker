@@ -1,6 +1,6 @@
 # NGSI-LD Context Source Registrations For Temporal Path: Proof of Concept
 
-This document describes the process of registering a Context Source with an NGSI-LD broker and validating its functionality the temporal path (/ngsi-ld/v1/temporal/entities).
+This document describes the process of registering a Context Source with an NGSI-LD broker and forwarding all the ngsi-ld queries of the temporal path (/ngsi-ld/v1/temporal/entities) to a third party http server.
 
 ## Prerequisites
 
