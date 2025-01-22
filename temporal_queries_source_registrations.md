@@ -15,8 +15,8 @@ Navigate to the `http_server` folder and start the HTTP server. This will act as
 
 ```bash
 cd http_server
-# Start your server (e.g., using Python's http.server module or a custom script)
-python3 -m http.server 9010
+npm install
+node app.js
 ```
 
 ### 2. Register the Context Source
