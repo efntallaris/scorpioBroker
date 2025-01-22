@@ -1,6 +1,6 @@
 # NGSI-LD Context Source Registrations For Temporal Path: Proof of Concept
 
-This document describes the process of registering a Context Source with an NGSI-LD broker and validating its functionality using a custom HTTP server.
+This document describes the process of registering a Context Source with an NGSI-LD broker and validating its functionality the temporal path (/ngsi-ld/v1/temporal/entities).
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ This document describes the process of registering a Context Source with an NGSI
 
 ### 1. Run the Custom HTTP Server
 
-Navigate to the `http_server` folder and start the HTTP server. This will act as the endpoint for the Context Source.
+Navigate to the `http_server` folder and start the HTTP server. This will act as the endpoint for the Context Source. It will receive ngsi-ld queries and respond according to NGSI-LD spec.
 
 ```bash
 cd http_server
@@ -62,7 +62,7 @@ This query will be forwarded to the custom HTTP server running at `{{http_server
 
 - [NGSI-LD Specifications](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.05.01_60/gs_cim009v010501p.pdf)
 - [Smart Data Models](https://smartdatamodels.org/)
-- The HTTP server is designed to behave based on the NGSI-LD specifications. It ensures that all interactions conform to the NGSI-LD context and data model requirements. For more details, refer to the [NGSI-LD Specifications](https://etsi.org/deliver/etsi_gs/CIM/001_099/009/01.06.01_60/gs_cim009v010601p.pdf).
+- The HTTP server is designed to behave based on the NGSI-LD specification. It ensures that it follows the NGSI-LD context and data model requirements. For more details, refer to the [NGSI-LD Specifications](https://etsi.org/deliver/etsi_gs/CIM/001_099/009/01.06.01_60/gs_cim009v010601p.pdf).
 
 ### HTTP Server Code Structure
 
