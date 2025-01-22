@@ -369,6 +369,7 @@ public class QueryService {
 							m.find();
 							String uri = m.group(1);
 							logger.debug("url " + uri.toString() + "/ngsi-ld/v1/entities/?" + rawQueryString);
+							logger.info("STRATOS url " + uri.toString() + "/ngsi-ld/v1/entities/?" + rawQueryString);
 							Callable<String> callable = () -> {
 								HttpHeaders headers = new HttpHeaders();
 								for (Object link : linkHeaders) {

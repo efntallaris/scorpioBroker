@@ -12,11 +12,17 @@ import eu.neclab.ngsildbroker.commons.constants.NGSIConstants;
 import eu.neclab.ngsildbroker.commons.enums.ErrorType;
 import eu.neclab.ngsildbroker.commons.exceptions.ResponseException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
+
 public class Validator {
 	/*
 	 * @Autowired static ObjectMapper objectMapper;
 	 */
 
+	private final static Logger logger = LoggerFactory.getLogger(Validator.class);
 	private static Map<String, String> getParameterMap() {
 		Map<String, String> paramMap = new HashMap<String, String>();
 		paramMap.put(NGSIConstants.QUERY_PARAMETER_TYPE, NGSIConstants.QUERY_PARAMETER_TYPE);
@@ -51,16 +57,27 @@ public class Validator {
 
 	public static boolean validate(String queryString) {
 		boolean result = true;
-		Map<String, String> paramMap = getParameterMap();
-		List<String> queriesKey = splitQueryParameter(queryString);
-		for (String key : queriesKey) {
-			String value = paramMap.get(key);
-			if (value == null) {
-				result = false;
-				break;
+
+		try {
+			String decodedQuery = URLDecoder.decode(queryString, StandardCharsets.UTF_8.name());
+			Map<String, String> paramMap = getParameterMap();
+			List<String> queriesKey = splitQueryParameter(decodedQuery);
+			logger.info("Query String:" + decodedQuery);
+			logger.info("Queries Key:" + queriesKey);
+			for (String key : queriesKey) {
+				String value = paramMap.get(key);
+				if (value == null) {
+					logger.info("this key is null:"+key);
+					result = false;
+					break;
+				}
 			}
+			return result;
+		} catch (Exception e) {
+		    // Handle exceptions gracefully (e.g., logging)
+		    e.printStackTrace();
 		}
-		return result;
+		return false;
 	}
 
 	public static void validateTemporalEntity(String payload) throws ResponseException, Exception {

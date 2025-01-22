@@ -19,6 +19,8 @@ import eu.neclab.ngsildbroker.commons.swaggerConfig.SwaggerConfigDetails;
 import eu.neclab.ngsildbroker.historymanager.config.ProducerChannel;
 
 
+import org.springframework.web.client.RestTemplate;
+
 @SpringBootApplication
 @EnableBinding({ AtContextProducerChannel.class,ProducerChannel.class })
 @Import({CommonKafkaConfig.class, SwaggerConfigDetails.class})
@@ -54,6 +56,11 @@ public class HistoryHandler {
 	@Bean
 	ParamsResolver paramsResolver() {
 		return new ParamsResolver();
+	}
+
+	@Bean("hsrestTemp")
+	RestTemplate restTemp() {
+		return new RestTemplate();
 	}
 	
 }
