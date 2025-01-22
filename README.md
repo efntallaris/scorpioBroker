@@ -41,6 +41,7 @@ Follow these steps to build and run the broker:
 
 ### Additional Resources
 For more details about the original project, visit the [ScorpioBroker GitHub repository](https://github.com/ScorpioBroker/ScorpioBroker).
-Details on how to run a context source and forward the temporal queries can be found [here]([https://github.com/efntallaris/scorpioBroker/blob/master/temporal_queries_source_registrations.md])
+
+Details on how to run a context source and forward the temporal queries can be found [here](https://github.com/efntallaris/scorpioBroker/blob/master/temporal_queries_source_registrations.md)
 
 ---
