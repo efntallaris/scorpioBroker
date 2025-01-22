@@ -1,4 +1,4 @@
-# NGSI-LD Context Source Registration: Proof of Concept
+# NGSI-LD Context Source Registrations For Temporal Path: Proof of Concept
 
 This document describes the process of registering a Context Source with an NGSI-LD broker and validating its functionality using a custom HTTP server.
 
@@ -60,7 +60,15 @@ This query will be forwarded to the custom HTTP server running at `{{http_server
 
 ## Additional Information
 
-- [NGSI-LD Specifications](https://etsi.org/deliver/etsi_gs/CIM/001_099/009/01.06.01_60/gs_cim009v010601p.pdf)
+- [NGSI-LD Specifications](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.05.01_60/gs_cim009v010501p.pdf)
 - [Smart Data Models](https://smartdatamodels.org/)
+- The HTTP server is designed to behave based on the NGSI-LD specifications. It ensures that all interactions conform to the NGSI-LD context and data model requirements. For more details, refer to the [NGSI-LD Specifications](https://etsi.org/deliver/etsi_gs/CIM/001_099/009/01.06.01_60/gs_cim009v010601p.pdf).
 
-This proof of concept demonstrates that the NGSI-LD registration and the custom HTTP server integration are functioning as expected.
+### HTTP Server Code Structure
+
+The `http_server` folder contains the following structure:
+
+- **controllers/**: Includes endpoints that handle incoming requests. This process receives ngsi-ld queries, processes them, and returns a response in NGSI-LD format. (You can use `req.query` to extract query parameters)
+- **routes/**: Defines the routes and maps them to appropriate controllers.
+- **services/**: Contains the business logic and helpers to process NGSI-LD queries and generate responses.
+
