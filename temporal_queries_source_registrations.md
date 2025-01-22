@@ -47,9 +47,25 @@ curl --location 'http://{{broker_ip}}:9090/ngsi-ld/v1/csourceRegistrations' \
 }'
 ```
 
-- Replace `{{broker_ip}}` with the IP address of your NGSI-LD broker.
-- Replace `{{http_server_ip}}` with the IP address where your HTTP server is running.
+### 3. Query Temporal Entities
 
+Use the following `curl` command to query temporal entities of type `WeatherObserved`:
+
+```bash
+curl --location 'http://{{broker_ip}}:9090/ngsi-ld/v1/temporal/entities?type=WeatherObserved&timerel=between&time=2025-01-01T00%3A00%3A00Z&endTime=2025-01-01T12%3A00%3A00Z' \
+--header 'Link: <https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/context.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json"'
+```
+
+### 3. Query Temporal Entities
+
+Use the following `curl` command to query temporal entities of type `WeatherObserved`:
+
+```bash
+curl --location 'http://{{broker_ip}}:9090/ngsi-ld/v1/temporal/entities?type=WeatherObserved&timerel=between&time=2025-01-01T00%3A00%3A00Z&endTime=2025-01-01T12%3A00%3A00Z' \
+--header 'Link: <https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/context.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json"'
+```
+
+This query will be forwarded to the custom HTTP server running at `{{http_server_ip}}:9010`.
 
 ## Additional Information
 
