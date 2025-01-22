@@ -16,10 +16,9 @@ It introduces functionality to **forward temporal queries from source registrati
 
 ### Prerequisites
 Ensure you have the following installed:
-- **Maven**
-- **Docker** and **Docker Compose**
-
----
+- **Maven**  
+- **Docker** and **Docker Compose**  
+- **Java JDK 17**  
 
 ### Build and Run
 
@@ -42,5 +41,6 @@ Follow these steps to build and run the broker:
 
 ### Additional Resources
 For more details about the original project, visit the [ScorpioBroker GitHub repository](https://github.com/ScorpioBroker/ScorpioBroker).
+Details on how to run a context source and forward the temporal queries can be found [here]([https://github.com/efntallaris/scorpioBroker/blob/master/temporal_queries_source_registrations.md])
 
 ---
